@@ -42,6 +42,18 @@
           height="30"
           @click="onClickandGo('https://medium.com/@allenyummy')"
         />
+        <img
+          class="icon"
+          alt="Gmail"
+          src="./assets/iconmonstr-gmail-3.svg"
+          width="30"
+          height="30"
+          @click="
+            onClickandGo(
+              'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiangyulun0914@gmail.com'
+            )
+          "
+        />
       </div>
     </div>
 
