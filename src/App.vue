@@ -11,7 +11,7 @@
 
       <div class="description">
         <span
-          >I'm Yu-Lun Chiang, <br />trying to be a reader and developer.</span
+          >I'm Yu-Lun Chiang. <br />Trying to be a reader and developer.</span
         >
       </div>
 
@@ -80,11 +80,6 @@ export default defineComponent({
   height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -94,18 +89,26 @@ export default defineComponent({
   height: 100%;
 
   .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 
     .photo_sticker {
-      left: calc((100% - 150px) / 2);
-      margin: 10rem 0 0 0;
-      border: 6px solid var(--color-border-photo);
+      text-align: center;
+      border: 6px solid var(--color-border);
       border-radius: 100px;
+
+      &:hover {
+        cursor: pointer;
+        border: 7px solid var(--color-border-hover);
+      }
     }
 
     .description {
-      margin: 0.5rem 0;
+      margin: 1rem 0;
       text-align: center;
     }
 
@@ -115,63 +118,19 @@ export default defineComponent({
       align-items: center;
       justify-content: center;
       gap: 20px;
-      margin: 2em 0;
+      margin: 1em 0;
 
       .icon:hover {
         cursor: pointer;
+        transform: scale(1.5);
+        transition: transform 0.1s;
       }
     }
   }
 
   .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
   }
 }
-
-// a,
-// .green {
-//   text-decoration: none;
-//   color: hsla(160, 100%, 37%, 1);
-//   transition: 0.4s;
-// }
-
-// @media (hover: hover) {
-//   a:hover {
-//     background-color: hsla(160, 100%, 37%, 0.2);
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   body {
-//     display: flex;
-//     place-items: center;
-//   }
-
-//   #app {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     padding: 0 2rem;
-//   }
-
-//   header {
-//     display: flex;
-//     place-items: center;
-//     padding-right: calc(var(--section-gap) / 2);
-//   }
-
-//   header .wrapper {
-//     display: flex;
-//     place-items: flex-start;
-//     flex-wrap: wrap;
-//   }
-
-//   .logo {
-//     margin: 0 2rem 0 0;
-//   }
-// }
 </style>
