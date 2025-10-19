@@ -3,7 +3,7 @@
     <IconItem
       class="photo_sticker"
       alt="Photo Sticker"
-      src="/PhotoSticker.svg"
+      :src="withBase('PhotoSticker.svg')"
       url="https://allenyummy.github.io/whoami/"
       size="100"
     />
@@ -36,28 +36,30 @@ export default defineComponent({
   name: "BodyComp",
   components: { IconItem },
   setup() {
+    const withBase = (p: string) => import.meta.env.BASE_URL + p;
+
     const icons = [
       {
         alt: "Github",
-        src: "/iconmonstr-github-3.svg",
+        src: withBase("iconmonstr-github-3.svg"),
         url: "https://github.com/allenyummy",
         size: 30,
       },
       {
         alt: "LinkedIn",
-        src: "/iconmonstr-linkedin-3.svg",
+        src: withBase("iconmonstr-linkedin-3.svg"),
         url: "https://www.linkedin.com/in/yulun-chiang/",
         size: 30,
       },
       {
         alt: "Medium",
-        src: "/iconmonstr-medium-3.svg",
+        src: withBase("iconmonstr-medium-3.svg"),
         url: "https://medium.com/@allenyummy",
         size: 30,
       },
       {
         alt: "Gmail",
-        src: "/iconmonstr-gmail-3.svg",
+        src: withBase("iconmonstr-gmail-3.svg"),
         url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiangyulun0914@gmail.com",
         size: 30,
       },
@@ -65,6 +67,7 @@ export default defineComponent({
 
     return {
       icons,
+      withBase,
     };
   },
 });
