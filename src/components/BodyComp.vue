@@ -3,7 +3,7 @@
     <IconItem
       class="photo_sticker"
       alt="Photo Sticker"
-      src="src/assets/PhotoSticker.svg"
+      src="/PhotoSticker.svg"
       url="https://allenyummy.github.io/whoami/"
       size="100"
     />
@@ -39,113 +39,32 @@ export default defineComponent({
     const icons = [
       {
         alt: "Github",
-        src: "src/assets/iconmonstr-github-3.svg",
+        src: "/iconmonstr-github-3.svg",
         url: "https://github.com/allenyummy",
         size: 30,
       },
       {
         alt: "LinkedIn",
-        src: "src/assets/iconmonstr-linkedin-3.svg",
+        src: "/iconmonstr-linkedin-3.svg",
         url: "https://www.linkedin.com/in/yulun-chiang/",
         size: 30,
       },
       {
         alt: "Medium",
-        src: "src/assets/iconmonstr-medium-3.svg",
+        src: "/iconmonstr-medium-3.svg",
         url: "https://medium.com/@allenyummy",
         size: 30,
       },
       {
         alt: "Gmail",
-        src: "src/assets/iconmonstr-gmail-3.svg",
+        src: "/iconmonstr-gmail-3.svg",
         url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiangyulun0914@gmail.com",
         size: 30,
       },
     ];
 
-    const galleryItems = [
-      {
-        img: "src/assets/portfolio/referral-form-thumb.jpg",
-        alt: "ReferralForm - Candidate Referral SaaS",
-        href: "https://allenyummy.github.io/referral-form",
-        title: "ReferralForm",
-        desc: "Candidate referrals with hosted file uploads",
-      },
-      {
-        img: "src/assets/portfolio/lust-studio-thumb.jpg",
-        alt: "Lust Studio - Creative CMS",
-        href: "https://allenyummy.github.io/lust-studio",
-        title: "Lust Studio",
-        desc: "CMS for creative production & curation",
-      },
-      {
-        img: "src/assets/portfolio/lets-orgasm-thumb.jpg",
-        alt: "Let's Orgasm! - E-commerce",
-        href: "https://allenyummy.github.io/lets-orgasm",
-        title: "Let's Orgasm!",
-        desc: "Sex-positive curated e-commerce",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-      {
-        img: "src/assets/portfolio/ai-notes-thumb.jpg",
-        alt: "AI Notes - Meeting Summarizer",
-        href: "https://allenyummy.github.io/ai-notes",
-        title: "AI Notes",
-        desc: "Record → transcribe → summarize",
-      },
-    ];
-
     return {
       icons,
-      galleryItems,
     };
   },
 });
